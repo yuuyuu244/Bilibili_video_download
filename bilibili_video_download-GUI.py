@@ -12,9 +12,7 @@ __author__ = 'Henry'
 '''
 
 import requests, time, hashlib, urllib.request, re, json
-import imageio
-imageio.plugins.ffmpeg.download()
-from moviepy.editor import *
+from moviepy import VideoFileClip, concatenate_videoclips, AudioFileClip
 import os, sys, threading
 from bs4 import BeautifulSoup
 
